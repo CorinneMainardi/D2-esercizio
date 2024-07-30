@@ -4,11 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lavora con noi</title>
+    <style>
+      .claim {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+      }
+      nav {
+        justify-content: space-between;
+        justify-content: center;
+        margin-top: 2dvh;
+      }
+      .navElements {
+        background-color: #ff2751;
+        text-decoration: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        margin-top: 5%;
+        color: #ff2751;
+      }
+      legend {
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+      .labelF {
+        margin-bottom: 15px;
+      }
+
+      button {
+        background-color: #ff2751;
+      }
+      footer {
+        background-color: #ff2751;
+        margin-top: 420px;
+        font-size: 15px;
+      }
+      footer p {
+        margin-bottom: -20px;
+        padding-bottom: 3px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <div>
-        <h1>Lavora con noi</h1>
+        <a href="index.html"> <img src="logo.svg" /> </a>
       </div>
       <nav>
         <div class="navBar">
@@ -18,8 +62,42 @@
         </div>
       </nav>
       <div>
-        <h3>Compila il form e candidati</h3>
+        <h1>Lavora con noi</h1>
       </div>
     </header>
+
+    <main>
+      <form>
+        <fildset>
+          <legend><strong>Compila il form e candidati!</strong></legend>
+
+          <div class="labelF">
+            <label for="name"> Nome e Cognome:</label>
+            <input type="text" id="name" placeholder="inserisci il tuo nome" required />
+          </div>
+          <div class="labelF">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="inserisci la tua email" required />
+          </div>
+          <div class="labelF">
+            <label for="cv">Allega il tuo cv:</label>
+            <input
+              type="file"
+              id="cv"
+              placeholder="inserisci il tuo cv"
+              acept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+              required
+            />
+          </div>
+        </fildset>
+        <br />
+        <button type="submit">Iscriviti!</button>
+      </form>
+    </main>
+    <footer>
+      <p>Blog Epicode&copy</p>
+      <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Eugenio Einaudi2 - Milano. p.iva 00112233</p>
+      <p><a href="info@epicode.school"> info@epicode.school</a></p>
+    </footer>
   </body>
 </html>
